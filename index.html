@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Sinterklaas Surprise</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Sinterklaas surprise met 4-cijferige code"> 
+</head>
+<body>
+  <main class="container">
+    <h1>Sinterklaas Surprise</h1>
+
+    <section class="poem">
+      <h2>Het gedicht</h2>
+      <p id="poem-text">Beste broer,<br>
+        (Vervang deze tekst door je eigen gedicht — zie README voor instructies.)
+      </p>
+    </section>
+
+    <section class="code-entry">
+      <h2>Voer de 4-cijfercode in</h2>
+      <div class="inputs" id="code-inputs">
+        <input inputmode="numeric" pattern="[0-9]*" maxlength="1" class="digit" id="d0" autocomplete="one-time-code">
+        <input inputmode="numeric" pattern="[0-9]*" maxlength="1" class="digit" id="d1" autocomplete="one-time-code">
+        <input inputmode="numeric" pattern="[0-9]*" maxlength="1" class="digit" id="d2" autocomplete="one-time-code">
+        <input inputmode="numeric" pattern="[0-9]*" maxlength="1" class="digit" id="d3" autocomplete="one-time-code">
+      </div>
+      <div class="actions">
+        <button id="check">Controleer</button>
+        <button id="clear" class="secondary">Wissen</button>
+      </div>
+      <p id="message" class="message" aria-live="polite"></p>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
