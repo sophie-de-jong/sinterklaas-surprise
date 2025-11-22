@@ -4,27 +4,96 @@
   --accent: #b8323a;
   --muted: #666;
 }
-*{box-sizing:border-box}
-body {
-    font-family:system-ui,
-    -apple-system,
-    Segoe UI,
-    Roboto,
-    'Helvetica Neue',
-    Arial; background:var(--bg); color:#111; margin:0; padding:1rem}
-.container{max-width:720px;margin:0 auto;background:var(--card);padding:1.25rem;border-radius:10px;box-shadow:0 6px 24px rgba(0,0,0,0.08)}
-h1{color:var(--accent);margin-top:0}
-.poem{margin-bottom:1rem}
-.poem p{line-height:1.5}
-.code-entry{margin-top:0.5rem}
-.inputs{display:flex;gap:8px;margin:0.5rem 0}
-.digit{width:3.25rem;height:3.25rem;font-size:1.5rem;text-align:center;border-radius:8px;border:1px solid #ddd}
-.actions{display:flex;gap:8px;align-items:center}
-button{background:var(--accent);color:#fff;border:none;padding:0.5rem 0.75rem;border-radius:8px;font-weight:600}
-button.secondary{background:#eee;color:#333;font-weight:500}
-.message{margin-top:0.75rem;font-weight:600}
-footer{margin-top:1rem;color:var(--muted);font-size:0.9rem}
 
-@media (max-width:420px){
-  .digit{width:2.8rem;height:2.8rem;font-size:1.3rem}
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  background: var(--bg);
+  color: #111;
+  margin: 0;
+  padding: 1rem;
+}
+
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  background: var(--card);
+  padding: 1.25rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.08);
+}
+
+h1 {
+  color: var(--accent);
+  margin-top: 0;
+}
+
+.poem {
+  margin-bottom: 1rem;
+}
+
+.poem p {
+  line-height: 1.5;
+}
+
+.code-entry {
+  margin-top: 0.5rem;
+}
+
+.inputs {
+  display: flex;
+  gap: 8px;
+  margin: 0.5rem 0;
+}
+
+.digit {
+  width: 3.25rem;
+  height: 3.25rem;
+  font-size: 1.5rem;
+  text-align: center;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.actions {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+button {
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: 0.5rem 0.75rem;
+  border-radius: 8px;
+  font-weight: 600;
+}
+
+button.secondary {
+  background: #eee;
+  color: #333;
+  font-weight: 500;
+}
+
+.message {
+  margin-top: 0.75rem;
+  font-weight: 600;
+}
+
+footer {
+  margin-top: 1rem;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
+
+@media (max-width: 420px) {
+  .digit {
+    width: 2.8rem;
+    height: 2.8rem;
+    font-size: 1.3rem;
+  }
 }

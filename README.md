@@ -1,4 +1,4 @@
-# Sinterklaas Surprise — eenvoudige 4-cijfer website
+# Sinterklaas Surprise: eenvoudige 4-cijfer website
 
 Deze kleine statische site geeft een plek om een Sinterklaas-gedicht te tonen en een 4-cijferige code in te voeren. Bij de juiste code verschijnt het bericht "Goed gedaan!" — de echte verrassing stop je zelf in de doos.
 
@@ -19,12 +19,9 @@ Pagina lokaal openen op je telefoon:
 2. De eenvoudigste manier is een klein HTTP-servertje starten in de map:
 
 ```bash
-cd /pad/naar/de/map
 python3 -m http.server 8000
 ```
 
-Open op je telefoon de URL `http://<jouw-computer-ip>:8000` en navigeer naar `index.html`.
+Open op je telefoon de URL `http://127.0.0.1:8000` en navigeer naar `index.html`.
 
 Alternatief: je kunt `index.html` direct openen in de browser (file://), maar sommige mobiele browsers blokkeren het automatisch focussen of numeric keyboards.
-
-Wil je dat ik het gedicht en hints alvast invul en een specifieke code instel? Geef de code en het gedicht door, dan pas ik het aan.
